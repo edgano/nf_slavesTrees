@@ -40,7 +40,7 @@ params.seqs ="/users/cn/egarriga/datasets/homfam/combinedSeqs/*.fa"
 params.refs ="/users/cn/egarriga/datasets/homfam/refs/*.ref"
 
 // input guide trees in Newick format. Or `false` to generate trees
-params.trees ="/users/cn/egarriga/datasets/homfam/trees/*.{CLUSTALO,MAFFT_PARTTREE,FAMSA}.dnd"
+//params.trees ="/users/cn/egarriga/datasets/homfam/trees/*.{CLUSTALO,MAFFT_PARTTREE,FAMSA}.dnd"
 
 // which tree methods to run if `trees` == `false`
 params.tree_method = "codnd"
@@ -51,7 +51,7 @@ params.tree_method = "codnd"
 params.align_method = "MAFFT-FFTNS1"      //"CLUSTALO,MAFFT-FFTNS1,MAFFT-SPARSECORE,UPP,MAFFT-GINSI"
 
 // bucket sizes for regressive algorithm
-params.buckets= '1000'
+params.buckets= '10'
 
 //run reg with slave trees
 params.slave_align = true
